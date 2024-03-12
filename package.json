@@ -2,7 +2,7 @@
     "name": "mi-log",
     "displayName": "Mi log",
     "description": "Mi log is an Extension to create quick log statements.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "Minar",
     "author": {
         "name": "Minar"
@@ -30,12 +30,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/"
+        "url": "https://github.com/Mi-nar/mi-log"
     },
     "bugs": {
-        "url": "https://github.com/"
+        "url": "https://github.com/Mi-nar/mi-log/issues"
     },
-    "homepage": "https://github.com/",
+    "homepage": "https://mi-nar.com/",
     "main": "./out/extension.js",
     "activationEvents": [
         "onLanguage:javascript",

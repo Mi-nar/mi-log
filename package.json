@@ -7,7 +7,7 @@
     "author": {
         "name": "Minar"
     },
-    "icon": "src/static/img/logo.png",
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.73.0"
     },

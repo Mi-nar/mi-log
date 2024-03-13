@@ -2,7 +2,7 @@
     "name": "mi-log",
     "displayName": "Mi log",
     "description": "Mi log is an Extension to create quick log statements.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "Minar",
     "author": {
         "name": "Minar"
@@ -55,7 +55,21 @@
         "onLanguage:javascript",
         "onLanguage:typescript",
         "onLanguage:python",
-        "onLanguage:php"
+        "onLanguage:php",
+        "onLanguage:java",
+        "onLanguage:c",
+        "onLanguage:cpp",
+        "onLanguage:ruby",
+        "onLanguage:swift",
+        "onLanguage:kotlin",
+        "onLanguage:go",
+        "onLanguage:rust",
+        "onLanguage:csharp",
+        "onLanguage:lua",
+        "onLanguage:bash",
+        "onLanguage:shellscript",
+        "onLanguage:matlab",
+        "onLanguage:r"
     ],
     "capabilities": {
         "untrustedWorkspaces": {
@@ -66,23 +80,198 @@
         "languages": [
             {
                 "id": "javascript",
-                "aliases": ["JavaScript", "javascript", "js"],
-                "extensions": [".js"]
-            },
-            {
-                "id": "typescript",
-                "aliases": ["TypeScript", "typescript", "ts"],
-                "extensions": [".ts"]
+                "aliases": [
+                    "JavaScript",
+                    "javascript",
+                    "js",
+                    "JS"
+                ],
+                "extensions": [
+                    ".js",
+                    ".mjs",
+                    ".cjs"
+                ]
             },
             {
                 "id": "python",
-                "aliases": ["Python", "python", "py"],
-                "extensions": [".py"]
+                "aliases": [
+                    "Python",
+                    "python",
+                    "py",
+                    "PY"
+                ],
+                "extensions": [
+                    ".py"
+                ]
+            },
+            {
+                "id": "java",
+                "aliases": [
+                    "Java",
+                    "java"
+                ],
+                "extensions": [
+                    ".java"
+                ]
+            },
+            {
+                "id": "c",
+                "aliases": [
+                    "C",
+                    "c"
+                ],
+                "extensions": [
+                    ".c"
+                ]
+            },
+            {
+                "id": "cpp",
+                "aliases": [
+                    "C++",
+                    "cpp"
+                ],
+                "extensions": [
+                    ".cpp",
+                    ".cc",
+                    ".cxx"
+                ]
+            },
+            {
+                "id": "ruby",
+                "aliases": [
+                    "Ruby",
+                    "ruby",
+                    "rb",
+                    "RB"
+                ],
+                "extensions": [
+                    ".rb",
+                    ".rhtml"
+                ]
             },
             {
                 "id": "php",
-                "aliases": ["PHP", "php"],
-                "extensions": [".php"]
+                "aliases": [
+                    "PHP",
+                    "php"
+                ],
+                "extensions": [
+                    ".php",
+                    ".php4",
+                    ".php5",
+                    ".phtml"
+                ]
+            },
+            {
+                "id": "swift",
+                "aliases": [
+                    "Swift",
+                    "swift"
+                ],
+                "extensions": [
+                    ".swift"
+                ]
+            },
+            {
+                "id": "typescript",
+                "aliases": [
+                    "TypeScript",
+                    "typescript",
+                    "ts",
+                    "TS"
+                ],
+                "extensions": [
+                    ".ts"
+                ]
+            },
+            {
+                "id": "kotlin",
+                "aliases": [
+                    "Kotlin",
+                    "kotlin"
+                ],
+                "extensions": [
+                    ".kt"
+                ]
+            },
+            {
+                "id": "go",
+                "aliases": [
+                    "Go",
+                    "go",
+                    "Golang",
+                    "golang"
+                ],
+                "extensions": [
+                    ".go"
+                ]
+            },
+            {
+                "id": "rust",
+                "aliases": [
+                    "Rust",
+                    "rust"
+                ],
+                "extensions": [
+                    ".rs"
+                ]
+            },
+            {
+                "id": "csharp",
+                "aliases": [
+                    "C#",
+                    "csharp",
+                    "cs",
+                    "CS"
+                ],
+                "extensions": [
+                    ".cs"
+                ]
+            },
+            {
+                "id": "lua",
+                "aliases": [
+                    "Lua",
+                    "lua"
+                ],
+                "extensions": [
+                    ".lua"
+                ]
+            },
+            {
+                "id": "shellscript",
+                "aliases": [
+                    "Bash",
+                    "bash",
+                    "ShellScript",
+                    "shellscript",
+                    "sh",
+                    "SH"
+                ],
+                "extensions": [
+                    ".sh"
+                ]
+            },
+            {
+                "id": "matlab",
+                "aliases": [
+                    "Matlab",
+                    "matlab"
+                ],
+                "extensions": [
+                    ".m"
+                ]
+            },
+            {
+                "id": "r",
+                "aliases": [
+                    "R",
+                    "r"
+                ],
+                "extensions": [
+                    ".r",
+                    ".R"
+                ]
             }
         ],
         "keybindings": [

@@ -10,6 +10,20 @@ Whether you're debugging or just want to quickly inspect a variable's value, thi
 - TypeScript
 - Python
 - PHP
+- Java
+- C
+- C++
+- Ruby
+- Swift
+- Kotlin
+- GO
+- Rust
+- C#
+- Lua
+- Bash
+- Shellscript
+- Matlab
+- R
 
 ## Features
 
@@ -23,4 +37,4 @@ No known issues at the moment.<br>
 Please report any bugs or suggestions on the GitHub repository.
 <br>
 
-### **Enjoy coding with Mi log!**
+### **Enjoy coding with Minar!**

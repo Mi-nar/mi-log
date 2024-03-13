@@ -2,7 +2,7 @@
     "name": "mi-log",
     "displayName": "Mi log",
     "description": "Mi log is an Extension to create quick log statements.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "Minar",
     "author": {
         "name": "Minar"
@@ -26,7 +26,21 @@
         "javascript",
         "typescript",
         "python",
-        "php"
+        "php",
+        "java",
+        "c",
+        "cpp",
+        "ruby",
+        "swift",
+        "kotlin",
+        "go",
+        "rust",
+        "csharp",
+        "lua",
+        "bash",
+        "shellscript",
+        "matlab",
+        "r"
     ],
     "repository": {
         "type": "git",

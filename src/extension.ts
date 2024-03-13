@@ -4,8 +4,26 @@ import { ExtensionContext, Range, commands, window } from "vscode";
 /**
  * HELP Setup all variables we need.
  */
-let _types:Array<string>=["javascript", "typescript", "python", "php"];
-let _logs:Array<string>=["console.log('__text__: ', __text__);", "console.log('__text__: ', __text__);", "print('__text__: ', __text__)", "print('__text__: '. __text__);"];
+let _logs = {
+    javascript: "console.log('__text__: ', __text__);",
+    typescript: "console.log('__text__: ', __text__);",
+    python: "print('__text__: ', __text__)",
+    php: "print('__text__: '. __text__);",
+    java: "System.out.println('__text__:' + __text__);",
+    c: "std::cout << '__text__: ' << __text__ << std::endl;",
+    cpp: "std::cout << '__text__: ' << __text__ << std::endl;",
+    ruby: "puts '__text__: #{__text__}'",
+    swift: "print('__text__: \(__text__)')",
+    kotlin: "println('__text__: $__text__')",
+    go: "fmt.Println('__text__:', __text__)",
+    rust: "println!('__text__: {}', __text__);",
+    csharp: "Console.WriteLine('__text__: ' + __text__);",
+    lua: "print('__text__: ' .. __text__)",
+    bash: "echo '__text__: $__text__'",
+    shellscript: "echo '__text__: $__text__'",
+    matlab: "disp(['__text__: ', num2str(__text__)])",
+    r: "cat('__text__:', __text__, '\n')"
+};
 
 
 /**
@@ -21,22 +39,22 @@ export function activate(context: ExtensionContext) {
             // INFO Check if there is an editor.
             if (editor) {
                 // INFO Create all variables we need.
-                let text = editor.document.getText(editor.selection);
+                let text: string = editor.document.getText(editor.selection);
 
                 // INFO Check if there is an text.
                 if (text) {
                     // INFO Insert the log statement.
                     commands.executeCommand('editor.action.insertLineAfter').then(() => {
                         // INFO Create all variables we need.
-                        let type = editor!.document.languageId;
+                        let type: string = editor!.document.languageId;
 
                         // INFO Check the language type.
-                        if (_types.includes(type)) {
+                        if (_logs[type as keyof typeof _logs]) {
                             // INFO Create all variables we need.
                             let range = new Range(editor!.selection.start, editor!.selection.end);
 
                             // INFO Update the text.
-                            text = _logs[_types.indexOf(type)].replace(/__text__/g, text);
+                            text = _logs[type as keyof typeof _logs].replace(/__text__/g, text);
 
                             // INFO Insert the text.
                             editor!.edit((editBuilder) => {
